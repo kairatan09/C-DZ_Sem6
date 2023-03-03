@@ -11,7 +11,6 @@ double Welcome(string message)
   return number;
 }
 
-
 double[] InterPoint(double b1, double k1, double b2, double k2)
 {
   double[] array = new double[2];
