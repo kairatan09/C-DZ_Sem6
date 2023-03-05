@@ -26,7 +26,16 @@ void PrintArray(int[] array)
 }
 
 
-Console.Write("Введите число: ");
-int N = Convert.ToInt32(Console.ReadLine());
-int[] array = Fibon(N);
-PrintArray(array);
+
+try
+{
+  Console.Write("Введите число: ");
+  int N = Convert.ToInt32(Console.ReadLine());
+  int[] array = Fibon(N);
+  PrintArray(array);
+}
+
+catch
+{
+  Console.WriteLine("Былт введены некорректные данные.");
+}
